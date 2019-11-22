@@ -8,221 +8,87 @@
    <link href="Assets/Content/css.css" rel="stylesheet">
    <link href="Assets/Content/keyboard.css" rel="stylesheet">
    <link href="Assets/Content/font-awesome.css" rel="stylesheet">
-   <style>
-      body{transition:1s all;background-color:#000 ;background-image:url(Assets/image/back.png);}
-      body.fp-viewing-0 {background-color:#1a478a;}
-      body.fp-viewing-1{background-color:#572362;}
-      body[class*="fp-viewing-2"] {background-color:#227762;}
-      .normal-view-content{position:fixed;height:100%;width:100%;border:0px solid;z-index: 9;transition:1s all;}
-      .fp-viewing-0 .normal-view-content{border-color: #062d5e;border-width: 25px;}
-      .fp-viewing-1 .normal-view-content{border-color: #420f4d;border-width: 25px;}
-      [class*="fp-viewing-2"] .normal-view-content{border-color: #15735b;border-width: 20px;}
-      .normal-view-box{position: absolute;width:0px;font-size: 24px;color: #062d5e;background-color: #f1f1f1;padding: 10px 40px;font-weight: bold;border: 15px solid #062d5e;transition:1s all;}
-      .normal-view-movie{width:600px;bottom: 0px;right: 0px;z-index: 2;}
-      .normal-view-resume{width:600px;bottom:0px;right: 0px;z-index: 1;}
-      .fp-viewing-1 .normal-view-resume{bottom:71px;right: 50px;}
-      
-      .fp-viewing-1 .normal-view-box{color: #420f4d;border: 15px solid #420f4d;}
-      [class*="fp-viewing-2"] .normal-view-box{color: #15735b;border: 15px solid #15735b;}
-      .fp-controlArrow.fp-prev {
-    left: 15px;
-    width: 0;
-    border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
-}
-.fp-controlArrow {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -ms-user-select: none;
-    position: absolute;
-    z-index: 4;
-    top: 50%;
-    cursor: pointer;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    margin-top: -38px;
-    -webkit-transform: translate3d(0,0,0);
-    -ms-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-}
-.fp-controlArrow.fp-next {
-    right: 15px;
-    border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #fff;
-}
-.fp-slide.fp-table {
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-}
-.fp-tableCell {
-display: table-cell;
-vertical-align: middle;
-width: 100%;
-height: 100%;
-}
-.fp-slide {float: left;}
-.fp-slidesNav{
-   position:fixed;
-   top:45%;
-   left:10%;
-}
-.fp-slidesNav ul li{
-   display: block;
-   width: 14px;
-   height: 13px;
-   margin: 7px;
-   position: relative;
-}
-.fp-slidesNav ul li a span{
-   border-radius: 50%;
-   position: absolute;
-   z-index: 1;
-   height: 4px;
-   width: 4px;
-   border: 0;
-   background: #333;
-   left: 50%;
-   top: 50%;
-   margin: -2px 0 0 -2px;
-   -webkit-transition: all 0.1s ease-in-out;
-   -moz-transition: all 0.1s ease-in-out;
-   -o-transition: all 0.1s ease-in-out;
-   transition: all 0.1s ease-in-out;
-}
-.fp-sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-}
-
-.move1,.move2,.move3,.human{
-   position:fixed;transition: 1s all;
-}
-.move1{
-   bottom:-100px;z-index: 8;opacity: 1;
-}
-.move2{
-   bottom:-180px;z-index: 7;opacity: .85;
-}
-
-.move3{
-   transform: rotateX(180deg);;z-index: 7;opacity: .95;top:-250px;
-}
-.move3 img,.move2 img,.move1 img,.human img{
-   width:110vw;
-}
-.fp-viewing-0 .move1{
-   left:0px;
-}
-.fp-viewing-1 .move1{
-   left:-5vw;
-}
-.fp-viewing-0 .move2{
-   right:0px;
-}
-.fp-viewing-1 .move2{
-   right:-5vw;
-}
-.fp-viewing-0 .human{
-   left:0px;
-}
-.fp-viewing-1 .human{
-   left:-5vw;
-}
-.text-motion-box,.text-motion-box2{
-   position: relative;
-   z-index: 2;
-   width: 45vw;
-   height: 100vh;
-   float: left;
-   display: inline-block;
-   left: 12vw;
-}
-.text-motion-box2{
-   width:33vw;
-}
-.text-motion-box img,.text-motion-box2 img{
-   position: absolute;
-   z-index: 2;
-   display: block;
-   width: 100%;
-   height: auto;
-}
-   </style>
+   <link href="Assets/Content/index.css" rel="stylesheet">
 </head>
 <body>
-   <div style="position:fixed;width:100%;;z-index: 10;background-color: transparent;padding:25px;">
+   <div style="position:fixed;width:100%;;z-index: 10;background-color: transparent;">
       <div class="header">
-            <img src="Assets/image/wulogo.png">
-            <ul class="nav-ul hidden-xs">
+            <ul class="nav-ul">
                <li class="nav-item">
-                  <a href="#introduction" class="scroll">關於</a>
+                  <a href="#0">WU</a>
+                  <div id="StevenWu" class="normal-view-box normal-view-movie"></div>
                </li>
                <li class="nav-item">
-                  <a href="#project" class="scroll">設計</a>
+                  <a href="#1">關於</a>
+                  <div class="normal-view-box normal-view-resume">My Resume</div>
+               </li>
+               <li class="nav-item">
+                  <a href="#2">設計</a>
+                  <div class="normal-view-box normal-view-title"></div>
                </li>
             </ul>
-            <div class="hidden-lg hidden-md hidden-sm menu"><a class="menu-trigger js-mobile-menu"><span></span></a></div>
-            <nav class="rwd-nav nav">
-               <div class="nav-wrapper">
-                     <div class="nav-inner">
-                        <div class="nav-list">
-                        <ul class="nav-ul">
-                           <li class="nav-item">
-                              <a href="#introduction" class="scroll">關於我</a>
-                           </li>
-                           <li class="nav-item">
-                              <a href="#project" class="scroll">網頁UI</a>
-                           </li>
-                           <li class="nav-item">
-                              <a href="#blog" class="scroll">部落格</a>
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </nav>
       </div>    
    </div>
-   <div class="normal-view-content">
-      <div id="StevenWu" class="normal-view-box normal-view-movie"></div>
-      <div class="normal-view-box normal-view-resume">My Resume</div>
+   <div class="bg-cloud">
+      <div class="section1-inner"></div>
    </div>
    <div id="section1" class="section1">
-      <div class="triangle-bottom-left">
-         <div class="section1-inner"></div>
-      </div>
       <div class="section1-inner">
          <div id="fullpage" class="bg-content">
-            <div id="welcome" class="section">
+            <div id="welcome" class="section" data-anchor="0">
                <div class="rotate-box">
                   <img style="width:100vw;max-width:1300px;" src="Assets/image/isometric.png">
                </div>
             </div>
-            <div id="introduction" class="section" style="margin-top:500vh;">
+            <div id="introduction" class="section" data-anchor="1" style="margin-top:500vh;">
 			<div class="rotate-box">
                   <img style="width:100vw;max-width:1300px;" src="Assets/image/isometric2.png">
                </div>
             </div>
-            <div id="design" class="rotate-box section" style="margin-top:200vh;">
-               <div class="slide" style="text-align: center;"><img src="Assets/image/isometric3-1.png"></div>
-               <div class="slide" style="text-align: center;"><img src="Assets/image/isometric3-2.png"></div>
-               <div class="slide" style="text-align: center;"><img src="Assets/image/isometric3-3.png"></div>
-               <div class="slide" style="text-align: center;"><img src="Assets/image/isometric3-4.png"></div>
+            <div id="design" class="rotate-box section" data-anchor="2" style="margin-top:200vh;">
+               <div class="slide text-center">
+                  <div class="view-porject normal-view-porject1">
+                     <div class="view-porject-title">概述</div>
+                     <div class="view-porject-explain">Smart home app讓手機操控智能產品，除了讓生活更加的便利外，並針對家庭成員的狀況，提高彼此互動的可能性。</div>
+                     <div class="text-center"><a href="project1.html">Detail</a></div>
+                  </div>
+                  <img src="Assets/image/isometric3-1.png">
+               </div>
+               <div class="slide text-center">
+                  <div class="view-porject normal-view-porject2">
+                     <div class="view-porject-title">概述</div>
+                     <div class="view-porject-explain">基於少紙化與雲端數據的趨勢，能源資料申報整合平台是一款給民間團體定期填報與申報資料給政府作查核的系統</div>
+                     <div class="text-center"><a href="project2.html">Detail</a></div>
+                  </div>
+                 <img src="Assets/image/isometric3-2.png">
+               </div>
+               <div class="slide text-center">
+                  <div class="view-porject normal-view-porject3">
+                     <div class="view-porject-title">概述</div>
+                     <div class="view-porject-explain">對於已經決定的行政處份有所異議，案件是在單位下的話，人民將依法可以提出異議！</div>
+                     <div class="text-center"><a href="project3.html">Detail</a></div>
+                  </div>
+                 <img src="Assets/image/isometric3-3.png">
+               </div>
+               <div class="slide text-center">
+                  <div class="view-porject normal-view-porject4">
+                     <div class="view-porject-title">概述</div>
+                     <div class="view-porject-explain">差勤行政管理系統是一個將行政作業電子化的作業系統</div>
+                     <div class="text-center"><a href="project4.html">Detail</a></div>
+                  </div>
+                 <img src="Assets/image/isometric3-4.png">
+               </div>
+               <div class="slide text-center">
+                  <div class="view-porject normal-view-porject5">
+                     <div class="view-porject-title">概述</div>
+                     <div class="view-porject-explain">銀行後台頁面。</div>
+                     <div class="text-center"><a href="#">Detail</a></div>
+                  </div>
+                  <img src="Assets/image/isometric3-5.png">
+               </div>
             </div>
          </div>
       </div>
-   </div>
-   <div style="position: fixed;width:100%;height:100%;">
-      
    </div>
 </div>
 </body>
@@ -235,7 +101,6 @@ height: 100%;
 	   licenseKey: 'null',
          scrollingSpeed: 1500,
          slidesNavigation:true,
-     controlArrows:false
       });
    </script>
 <script>

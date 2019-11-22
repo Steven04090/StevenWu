@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StevenWu - Project3</title>
-	<link href="./Assets/Content/bootstrap.css" rel="stylesheet">
-	<link href="./Assets/Content/css.css" rel="stylesheet">
-	<link href="./Assets/Content/font-awesome.css" rel="stylesheet">
+	<link href="Assets/Content/bootstrap.css" rel="stylesheet">
+	<link href="Assets/Content/css.css" rel="stylesheet">
+	<link href="Assets/Content/font-awesome.css" rel="stylesheet">
 	<link href="Assets/Content/zoom.css" rel="stylesheet">
 </head>
-  <body>
+  <body data-spy="scroll" data-target="#toc">
+	<div class="normal-view-content"></div>
 	<div class="header">
 		<img src="Assets/image/wulogo.png">
 		<ul class="nav-ul hidden-xs">
@@ -19,28 +20,47 @@
 		 </ul>
 		 <div class="hidden-lg hidden-md hidden-sm menu"><a href="index.html"><i style="font-size:20px;" class="fa fa-arrow-left"></i></a></div>
 	</div>
-	
 	<div class="content-page">
-			<div class="content-top-image project-3-img">
-			</div>
-			<div class="col-lg-12 project-link">
-				<a href="#" class="btn">Project Page <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-			</div>
-
 			<!-- 內容 -->
 			<section class="project-panel row">
+					<div class="col-lg-9 col-md-12 no-padding">
+							<div class="content-top-image project-3-img">
+							</div>	
+							</div>
+					<div class="col-lg-3 hidden-sm hidden-xs no-padding border-25">
+							<div class="project-head sticky">
+								<h1 data-toc-skip>訴願系統</h1>
+								<h2 data-toc-skip>公其心，萬善出！</h2>
+							</div>
+							<div class="project-data border-top-bottom-25" style="position:relative;padding-top:40px;padding-bottom: 20px;">
+									<div class="project-data-q">
+										<h2 data-toc-skip><i class="fa fa-clock-o" aria-hidden="true"></i>專案時間</h2>
+										<span>
+											<div>2017. 05/15 - 2017. 10/02</div>
+										</span>
+									</div>
+									<div class="project-data-q">
+										<h2 data-toc-skip><i class="fa fa-wrench" aria-hidden="true"></i>使用工具</h2>
+										<span>
+											<div>Adobe AI</div>
+											<div>Adobe PS</div>
+											<div>HTML5、CSS、JS</div>
+										</span>
+									</div>
+									<div class="project-data-q">
+										<h2 data-toc-skip><i class="fa fa-puzzle-piece" aria-hidden="true"></i>工作內容</h2>
+										<span>
+											<div>Web UI Design</div>
+											<div>primary UX Research</div>
+										</span>
+									</div>
+								</div>
+					</div>
 				<div class="col-lg-9 col-md-12 no-padding">
-					<div class="sticky sticky1 project-head">
-							<h1>差勤行政管理系統</h1>
-							<h3>公司內部管理的好助手！</h3>
-						</div>
-						<div class="sticky sticky2 hidden-xs">					
-								<img src="Assets/image/laptop.png">
-						</div>
 				<div class="framecontent">
 				<div class="project-section">
 					<div class="project-title">
-							<h3>網站簡介</h3>
+							<h3 data-content="網站簡介">網站簡介</h3>
 					</div>
 					<div class="project-content">
 						<div class="text-intro">
@@ -60,7 +80,7 @@
 			<div>
 				<div class="project-section row">	
 					<div class="project-title">
-						<h3>問題點</h3>
+						<h3 data-content="問題點">問題點</h3>
 					</div>
 					<div class="project-content">
 						<div class="text-intro">
@@ -92,7 +112,7 @@
 			<div>
 				<div class="project-section">	
 					<div class="project-title">
-						<h3>Sitemap</h3>
+						<h3 data-content="Sitemap">Sitemap</h3>
 					</div>
 					<div class="project-content">
 						<div class="m-center t-center">
@@ -110,7 +130,7 @@
 			<div>
 				<div class="project-section">	
 						<div class="project-title">
-							<h3>介面設計</h3>
+							<h3 data-content="介面設計">介面設計</h3>
 						</div>
 						<div class="project-content">
 							<div class="text-intro">
@@ -137,34 +157,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="col-lg-3 hidden-md hidden-sm hidden-xs no-padding">
-			<div class="project-data sticky" style="top:7em;margin-top:3em;">
-					<div class="project-data-q">
-						<h2><i class="fa fa-clock-o" aria-hidden="true"></i>專案時間</h2>
-						<span>
-							<div>2017. 05/15 - 2017. 10/02</div>
-						</span>
-					</div>
-					<div class="project-data-q">
-						<h2><i class="fa fa-wrench" aria-hidden="true"></i>使用工具</h2>
-						<span>
-							<div>Adobe AI</div>
-							<div>Adobe PS</div>
-							<div>HTML5、CSS、JS</div>
-						</span>
-					</div>
-					<div class="project-data-q">
-						<h2><i class="fa fa-puzzle-piece" aria-hidden="true"></i>工作內容</h2>
-						<span>
-							<div>Web UI Design</div>
-							<div>primary UX Research</div>
-						</span>
-					</div>
-				</div>
-	</div>
-			</section>
-			<footer class="footer">
+		<footer class="footer">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12 t-center">
@@ -173,21 +166,22 @@
 					</div>
 				</div>
 			</footer>
+	</div>
+	<div class="col-lg-3 hidden-sm hidden-xs no-padding border-25">
+			<nav id="toc" data-toggle="toc" class="sticky-top" style="top:150px;"></nav>
 		</div>
-		<div class="pref">
-				<a class="left" href="project2.html">
-					Prev
-				</a>
-			</div>
-			<div class="next">
-				<a class="right" href="project4.html">
-					Next
-				</a>
-			</div>
+			</section>
+		</div>
 			<script src="Assets/javascript/jquery.min.js"></script>
+			<script src="Assets/javascript/stickyfill.js"></script>
+			<script src="Assets/javascript/bootstrap.min.js"></script>
 			<script src="Assets/javascript/transition.js"></script>
 			<script src="Assets/javascript/zoom.js"></script>
 			<script src="Assets/javascript/menu.js"></script>
+			<link  rel="stylesheet"  href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"/>
+			<!-- add after bootstrap.min.js -->
+			<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+		
 			<script>
 				var elements = document.querySelectorAll('.sticky');
 				Stickyfill.add(elements);

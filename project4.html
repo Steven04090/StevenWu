@@ -9,7 +9,8 @@
 	<link href="Assets/Content/font-awesome.css" rel="stylesheet">
 	<link href="Assets/Content/zoom.css" rel="stylesheet">
 </head>
-  <body>
+  <body data-spy="scroll" data-target="#toc">
+	<div class="normal-view-content"></div>
 	<div class="header">
 		<img src="Assets/image/wulogo.png">
 		<ul class="nav-ul hidden-xs">
@@ -20,153 +21,170 @@
 		 <div class="hidden-lg hidden-md hidden-sm menu"><a href="index.html"><i style="font-size:20px;" class="fa fa-arrow-left"></i></a></div>
 	</div>
 	<div class="content-page">
-		<div class="content-top-image project-4-img">
-		</div>
-		<div class="col-lg-12 project-link">
-			<a href="#" class="btn">Project Page <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-		</div>
-
-		<!-- 內容 -->
-		<section class="project-panel row">
+			<!-- 內容 -->
+			<section class="project-panel row">
+					<div class="col-lg-9 col-md-12 no-padding">
+							<div class="content-top-image project-4-img">
+							</div>	
+							</div>
+					<div class="col-lg-3 hidden-sm hidden-xs no-padding border-25">
+							<div class="project-head sticky">
+								<h1 data-toc-skip>差勤行政管理系統</h1>
+								<h2 data-toc-skip>公司內部管理的好助手！</h2>
+							</div>
+							<div class="project-data border-top-bottom-25" style="position:relative;padding-top:40px;padding-bottom: 20px;">
+									<div class="project-data-q">
+										<h2 data-toc-skip><i class="fa fa-clock-o" aria-hidden="true"></i>專案時間</h2>
+										<span>
+											<div>2017. 05/15 - 2017. 10/02</div>
+										</span>
+									</div>
+									<div class="project-data-q">
+										<h2 data-toc-skip><i class="fa fa-wrench" aria-hidden="true"></i>使用工具</h2>
+										<span>
+											<div>Adobe AI</div>
+											<div>Adobe PS</div>
+											<div>HTML5、CSS、JS</div>
+										</span>
+									</div>
+									<div class="project-data-q">
+										<h2 data-toc-skip><i class="fa fa-puzzle-piece" aria-hidden="true"></i>工作內容</h2>
+										<span>
+											<div>Web UI Design</div>
+											<div>primary UX Research</div>
+										</span>
+									</div>
+								</div>
+					</div>
 				<div class="col-lg-9 col-md-12 no-padding">
-				<div class="sticky sticky1 project-head">
-						<h1>農業科技計畫首頁</h1>
-					<h3>使用者可在此提報計畫！</h3>
-					</div>
-					<div class="sticky sticky2 hidden-xs">					
-							<img src="Assets/image/laptop.png">
-					</div>
-			<div class="framecontent">
+				<div class="framecontent">
 				<div class="project-section">
 					<div class="project-title">
-						<h3>網站概述</h3>
+							<h3 data-content="網站簡介">網站簡介</h3>
 					</div>
 					<div class="project-content">
 						<div class="text-intro">
-							<p><span style="text-decoration: line-through;">政府規定農委會每年的科技預算如何運用、如何規劃的，需要提出明確的說明。於是個別的計畫要經過「先提計畫研提審議」、「年度執行計畫研提核定」、「年度執行計畫管考」三個階段，經過層層審核後拿到計畫經費開始執行計畫，之後還需要提送管考報告。因此本系統為農委會與提報者之間的計畫管理平台，提供完整的申報流程資訊，藉由雲端E化提升申報品質與速度。</span>
-								<br><br><span style="font-weight:bold;color:red;">簡單來講就是：農委會底下的科技計畫系統，使用者在此提報計畫，主管機關可以在此核定計畫，並且整合管考計畫及後續的追蹤。</span>
-							</p>
-						</div>
-						<div class="m-center t-center">
-							<img src="Assets/image/project4-2.png" data-action="zoom">
+								<p>差勤行政管理系統是一個將行政作業電子化的作業系統，
+								對於一般員工經常使用的功能，不管是在各種事件的表單申請、
+								物品借用與費用請款，將省去紙本來來回回的時間成本與浪費，
+								主管單位更能線上審核，查閱個員工的休假日期與請款紀錄，提高單位的辦事效率。
+								</p>
+							<div class="m-center t-center">
+								<img src="Assets/image/project4-1.jpg">
+							</div>
 						</div>
 					</div>
 					
 				</div>
 			
 			<div>
-			<div class="project-section">	
-				<div class="project-title">
-					<h3>導引頁 Redesign</h3>
-				</div>
-				<div class="project-content">
-					<div class="text-intro">
-						<p>由於舊版的導引頁非常的陽春(如下圖所示)，只有子系統連結的icon，少了許多重要的資訊導引使用者，因此首要的目標在提升使用者的體驗，將各子系統所需的資訊傳達給使用者。
-							<br>
-						</p>
-						<img src="Assets/image/project4-3.jpg" data-action="zoom">
-					</div>
-					<div class="text-intro">
-							<br>
-							<p>
-							次來，政府走向公開透明的做法，也因為如此，我們決定延續這個潮流，讓使用者清楚了解各個計畫的執行日程、進度、結果。新增的功能包含：
-							</p>
-							<ol style="list-style-type:upper-roman;">
-								<li>科技聯絡人資料</li><li>計畫成果</li><li>法律</li><li>公布欄</li>
-							</ol>
-						<p>最後，我們也根據部分使用者的電話回饋，瞭解到在撈取資料時的等候時間，頁面顯示資訊不夠明確，並且需要改善頁面與頁面之間的轉換過程，手機平板也有RWD的反饋。
-						</p>
-					</div>
-				</div>
-
-			</div>
-			</div>
-
-			<div>
-			<div class="project-section">
+				<div class="project-section row">	
 					<div class="project-title">
-						<h3>頁面規劃</h3>
+						<h3 data-content="問題點">問題點</h3>
 					</div>
 					<div class="project-content">
 						<div class="text-intro">
-							<p>依據整理出的功能總共含：<strong>系統應用區、計畫公告資訊、系統公告、行事曆、連絡人、計畫成果、連結、文件下載、法規</strong>等。
-								<br>將這些項目依可能的常用度來排序，初步規劃成的頁面(如下圖)。
-							</p>
-							<img src="Assets/image/project4-4.jpg" data-action="zoom" height="800px;">
+								<p>儀表板(dashboard)的規劃，需要顯示的項目有打卡資訊、待簽核案件、申請案件、假別與行事曆，雖然項目很多但都是必要的資訊。
+								傳統常用的解決方式是利用表格排版，達到節省空間卻能夠在有限範圍內呈現所有的資訊，但由於顯示出來的資料量過於密集，資料與資料間的關係還需要在腦中做第二次的轉換比較，無法立即提供使用者視覺上明確的判斷來解讀資訊。
+								再來是表單申請，使用者必須在網頁表單中KEY入必要資訊以及依據網頁的操作流程，因此在操作流程與視覺動線上需要良好的設計規劃。
+								</p>
 						</div>
 					</div>
-			</div>
-			</div>
-			<div>
-			<div class="project-section">	
-					<div class="project-title">
-						<h3>介面設計</h3>
-					</div>
-					<div class="project-content">
-						<div class="text-intro">
-							<p>首頁改變申報系統登入頁的形式，以 landing page 跳脫傳統的制式。</p>
-						</div>
+					<div class="project-data">
 					</div>
 					<div class="project-img">
-						<img src="Assets/image/project4-1.jpg" data-action="zoom">
+						<img src="Assets/image/project4-2.jpg">
+						<div style="max-width: 550px;margin:0 auto;">
+							<p class="source-p">
+								來源:
+								<a href="https://www.femashr.com/attendance/" target="_blank">壹、Femas HR</a>
+								、
+								<a href="http://theembazaar.com/demo/themejio/truckry/v1/Horizontal/" target="_blank">貳、truckry</a>
+								、
+								<a href="https://eip.netask.com.tw/product/attendance" target="_blank">Netask 世成科技</a>
+								、
+								<a href="https://bizform.vitalyun.com/#/" target="_blank">肆、叡揚資訊</a>
+							</p>
+						</div>
+					</div>		
+				</div>
+			</div>
+			<div>
+				<div class="project-section">	
+					<div class="project-title">
+						<h3 data-content="Sitemap">Sitemap</h3>
+					</div>
+					<div class="project-content">
+						<div class="m-center t-center">
+									
+						</div>
+					</div>
+					<div class="project-data">
+							
+					</div>
+					<div class="project-img">
+						<img src="Assets/image/project4-3.png">
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<div class="col-lg-3 hidden-md hidden-sm hidden-xs no-padding">
-			<div class="project-data sticky" style="top:7em;margin-top:3em;">
-					<div class="project-data-q">
-						<h2><i class="fa fa-clock-o" aria-hidden="true"></i>專案時間</h2>
-						<span>
-							<div>2017. 01/01 - 2017. 03/30</div>
-						</span>
-					</div>
-					<div class="project-data-q">
-						<h2><i class="fa fa-wrench" aria-hidden="true"></i>使用工具</h2>
-						<span>
-							<div>Adobe AI</div>
-							<div>HTML5、CSS、JS</div>
-						</span>
-					</div>
-					<div class="project-data-q">
-						<h2><i class="fa fa-puzzle-piece" aria-hidden="true"></i>工作內容</h2>
-						<span>
-							<div>Web UI Design</div>
-							<div>primary UX Research</div>
-						</span>
-					</div>
+			<div>
+				<div class="project-section">	
+						<div class="project-title">
+							<h3 data-content="介面設計">介面設計</h3>
+						</div>
+						<div class="project-content">
+							<div class="text-intro">
+								<p>為了讓使用者能一目了然儀表板的內容，各別資料採用適合其呈現的圖表方式。</p>
+							</div>			
+						</div>
+						<div class="project-data">
+							<div class="m-center t-center">
+							</div>
+						</div>	
+						<div class="project-img">
+								<img src="Assets/image/project4-4.jpg">
+						</div>
+						<div class="project-content">
+							<div class="text-intro">
+								<p>表單申請流程強調區塊的差異，以及添加順序提示，並加入了視覺動態引導。</p>
+							</div>			
+						</div>
+						<div class="project-img">
+							<video id="video1" controls width="800px">
+								<source src="Assets/video/manage1.mp4" type="video/mp4">
+							</video>
+						</div>
 				</div>
-	</div>
-		</section>
+			</div>
+		</div>
 		<footer class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 t-center">
-						<h5>2018 © Steven Wu</h5>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 t-center">
+							<h5>2018 © Steven Wu</h5>
+						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
-	
-
-	<div class="pref">
-			<a class="left" href="project3.html">
-				Prev
-			</a>
+			</footer>
+	</div>
+	<div class="col-lg-3 hidden-sm hidden-xs no-padding border-25">
+			<nav id="toc" data-toggle="toc" class="sticky-top" style="top:150px;"></nav>
 		</div>
-		<div class="next">
-			<a class="right" href="project5.html">
-				Next
-			</a>
+			</section>
 		</div>
-		<script src="Assets/javascript/jquery.min.js"></script>
-		<script src="Assets/javascript/transition.js"></script>
-		<script src="Assets/javascript/zoom.js"></script>
-		<script src="Assets/javascript/menu.js"></script>
-		<script>
-			var elements = document.querySelectorAll('.sticky');
-			Stickyfill.add(elements);
-		</script>
+			<script src="Assets/javascript/jquery.min.js"></script>
+			<script src="Assets/javascript/stickyfill.js"></script>
+			<script src="Assets/javascript/bootstrap.min.js"></script>
+			<script src="Assets/javascript/transition.js"></script>
+			<script src="Assets/javascript/zoom.js"></script>
+			<script src="Assets/javascript/menu.js"></script>
+			<link  rel="stylesheet"  href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"/>
+			<!-- add after bootstrap.min.js -->
+			<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+		
+			<script>
+				var elements = document.querySelectorAll('.sticky');
+				Stickyfill.add(elements);
+			</script>
   </body>
 </html>
