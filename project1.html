@@ -9,22 +9,29 @@
 	<link href="Assets/Content/font-awesome.css" rel="stylesheet">
 	<link href="Assets/Content/zoom.css" rel="stylesheet">
 	<link href="Assets/Content/device-mockups.min.css" rel="stylesheet">
+	<style>
+	.header{position:absolute;top:0;right:0;bottom:unset;z-index: 1;padding: 0px 30px 0px 0px;}
+	.nav-item{border:none;margin-bottom: 0px;}
+	.nav-item > a{background-color: transparent;}
+	.normal-view-content{border-width: 10px !important;}
+	</style>
 </head>
   <body data-spy="scroll" data-target="#toc">
 	<div class="normal-view-content"></div>
-	<div class="header">
-			<img src="Assets/image/wulogo.png">
-			<ul class="nav-ul hidden-xs">
-				<li class="nav-item">
-					<a href="index.html"><i class="fa fa-arrow-left"></i></a>
-				</li>
-			 </ul>
-			 <div class="hidden-lg hidden-md hidden-sm menu"><a href="index.html"><i style="font-size:20px;" class="fa fa-arrow-left"></i></a></div>
-		</div>
 	<div class="content-page">
 		<!-- 內容 -->
 		<section class="project-panel row">
 			<div class="col-lg-9 col-md-12 no-padding">
+				<div class="header">
+					<ul class="nav-ul">
+					<li class="nav-item">
+						<a href="#0"><img style="width:40px;" src="Assets/image/wulogo.png"></a>
+					</li>
+					<li class="nav-item" style="float: right;">
+						<a href="index.html"><i class="fa fa-arrow-left" style="position: relative;top: 4px;color:#fff;"></i></a>
+					</li>
+					</ul>
+				</div>
 				<div class="content-top-image project-1-img">
 					<div class="device-container animation-element slide-left-delay in-view">
 						<div class="device-mockup iphone6_plus portrait white">
@@ -42,7 +49,7 @@
 			</div>
 			<div class="col-lg-3 hidden-sm hidden-xs no-padding border-25">
 				<div class="project-head sticky">
-					<h1 data-toc-skip>Smart Home App</h1>
+					<h1 data-toc-skip style="color: #408f97;">Smart Home App</h1>
 					<h2 data-toc-skip>smart your life</h2>
 				</div>
 				<div class="project-data border-top-bottom-25" style="position:relative;padding-top: 40px;padding-bottom: 20px;">
@@ -178,11 +185,7 @@
 					<div class="project-title">
 						<h3 data-content="設計規範">設計規範</h3>
 					</div>
-					<div class="project-content">
-						<div class="text-intro" style="text-align: center;">
-							
-						</div>
-					</div>
+
 					<div class="project-data" style="text-align: center;">
 							<h3 data-toc-skip>色彩計畫</h3>
 								<img src="Assets/image/project1-3.jpg" data-action="zoom" style="max-width: 600px;">
@@ -196,11 +199,6 @@
 				<div class="project-section">	
 					<div class="project-title">
 						<h3 data-content="Wireframes">Wireframes</h3>
-					</div>
-					<div class="project-content">
-						<div class="text-intro">
-							<p></p>
-						</div>
 					</div>
 					<div class="project-data">
 									
@@ -217,14 +215,12 @@
 					</div>
 					<div class="project-content">
 						<div class="text-intro">
-							<img src="Assets/image/project1-7.jpg" data-action="zoom">	
+								
 						</div>
 					</div>
-					<div class="project-data">
-							
-					</div>
+
 					<div class="project-img">		
-							
+						<img src="Assets/image/project1-7.jpg" data-action="zoom">
 					</div>
 				</div>
 			</div>

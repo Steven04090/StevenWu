@@ -8,35 +8,49 @@
 	<link href="Assets/Content/css.css" rel="stylesheet">
 	<link href="Assets/Content/font-awesome.css" rel="stylesheet">
 	<link href="Assets/Content/zoom.css" rel="stylesheet">
+	<style>
+		.header{position:absolute;top:0;right:0;bottom:unset;z-index: 1;padding: 0px 30px 0px 0px;}
+		.nav-item{border:none;margin-bottom: 0px;}
+		.nav-item > a{background-color: transparent;}
+		.normal-view-content{border-width: 10px !important;}
+		.col-lg-3 .project-data h2{color:#c18b8b;}
+		.project-data-q h2 i{
+			color: #847971;
+		}
+		.normal-view-content,.border-25,.border-top-bottom-25,.project-head{
+		border-color:#7b5353 !important;
+	}
+	</style>
 </head>
   <body data-spy="scroll" data-target="#toc">
 	<div class="normal-view-content"></div>
-	<div class="header">
-		<img src="Assets/image/wulogo.png">
-		<ul class="nav-ul hidden-xs">
-			<li class="nav-item">
-				<a href="index.html"><i class="fa fa-arrow-left"></i></a>
-			</li>
-		 </ul>
-		 <div class="hidden-lg hidden-md hidden-sm menu"><a href="index.html"><i style="font-size:20px;" class="fa fa-arrow-left"></i></a></div>
-	</div>
 	<div class="content-page">
 			<!-- 內容 -->
 			<section class="project-panel row">
 					<div class="col-lg-9 col-md-12 no-padding">
-							<div class="content-top-image project-3-img">
-							</div>	
+						<div class="header">
+								<ul class="nav-ul">
+								<li class="nav-item">
+									<a href="#0"><img style="width:40px;" src="Assets/image/wulogo.png"></a>
+								</li>
+								<li class="nav-item" style="float: right;">
+										<a href="index.html"><i class="fa fa-arrow-left" style="position: relative;top: 4px;color:#fff;"></i></a>
+								</li>
+								</ul>
 							</div>
+						<div class="content-top-image project-3-img" style="opacity: .7;">
+						</div>	
+						</div>
 					<div class="col-lg-3 hidden-sm hidden-xs no-padding border-25">
 							<div class="project-head sticky">
-								<h1 data-toc-skip>訴願系統</h1>
+								<h1 data-toc-skip style="color: #7b5353;">訴願系統</h1>
 								<h2 data-toc-skip>公其心，萬善出！</h2>
 							</div>
 							<div class="project-data border-top-bottom-25" style="position:relative;padding-top:40px;padding-bottom: 20px;">
 									<div class="project-data-q">
 										<h2 data-toc-skip><i class="fa fa-clock-o" aria-hidden="true"></i>專案時間</h2>
 										<span>
-											<div>2017. 05/15 - 2017. 10/02</div>
+											<div>2019. 07/15 - 2020. 1/02</div>
 										</span>
 									</div>
 									<div class="project-data-q">
@@ -64,10 +78,7 @@
 					</div>
 					<div class="project-content">
 						<div class="text-intro">
-								<p>差勤行政管理系統是一個將行政作業電子化的作業系統，
-								對於一般員工經常使用的功能，不管是在各種事件的表單申請、
-								物品借用與費用請款，將省去紙本來來回回的時間成本與浪費，
-								主管單位更能線上審核，查閱個員工的休假日期與請款紀錄，提高單位的辦事效率。
+								<p>人民對於已經決定的行政處份有所異議，可以在此提出訴願的請求，並且能夠查詢訴願的進度，除此之外，訴願的相關資訊(法律條文、委員會與範例等)也能在此一目了然。
 								</p>
 							<div class="m-center t-center">
 								<img src="Assets/image/project3-1.jpg">
@@ -78,55 +89,34 @@
 				</div>
 			
 			<div>
-				<div class="project-section row">	
+				<div class="project-section">	
 					<div class="project-title">
 						<h3 data-content="問題點">問題點</h3>
 					</div>
 					<div class="project-content">
 						<div class="text-intro">
-								<p>儀表板(dashboard)的規劃，需要顯示的項目有打卡資訊、待簽核案件、申請案件、假別與行事曆，雖然項目很多但都是必要的資訊。
-								傳統常用的解決方式是利用表格排版，達到節省空間卻能夠在有限範圍內呈現所有的資訊，但由於顯示出來的資料量過於密集，資料與資料間的關係還需要在腦中做第二次的轉換比較，無法立即提供使用者視覺上明確的判斷來解讀資訊。
-								再來是表單申請，使用者必須在網頁表單中KEY入必要資訊以及依據網頁的操作流程，因此在操作流程與視覺動線上需要良好的設計規劃。
+								<p>
+									一、導覽列缺乏統整<br>
+									二、網路申請頁面無法預期，以及沒有引導作用<br>
+									三、對於部分資訊架構階層太深，導致頁面需要不停跳轉<br>
+									四、決定書、條文等冗長的內容缺少頁籤引導，對於閱讀上的不便<br>
 								</p>
 						</div>
 					</div>
 					<div class="project-data">
 					</div>
 					<div class="project-img">
-						<img src="Assets/image/project3-2.jpg">
+						<img src="Assets/image/project3-2.jpg" data-action="zoom">
 						<div style="max-width: 550px;margin:0 auto;">
 							<p class="source-p">
 								來源:
-								<a href="https://www.femashr.com/attendance/" target="_blank">壹、Femas HR</a>
-								、
-								<a href="http://theembazaar.com/demo/themejio/truckry/v1/Horizontal/" target="_blank">貳、truckry</a>
-								、
-								<a href="https://eip.netask.com.tw/product/attendance" target="_blank">Netask 世成科技</a>
-								、
-								<a href="https://bizform.vitalyun.com/#/" target="_blank">肆、叡揚資訊</a>
+								<a href="https://www.ey.gov.tw/App/6425778946FAB10A" target="_blank">行政院 訴願系統</a>
 							</p>
 						</div>
 					</div>		
 				</div>
 			</div>
-			<div>
-				<div class="project-section">	
-					<div class="project-title">
-						<h3 data-content="Sitemap">Sitemap</h3>
-					</div>
-					<div class="project-content">
-						<div class="m-center t-center">
-									
-						</div>
-					</div>
-					<div class="project-data">
-							
-					</div>
-					<div class="project-img">
-						<img src="Assets/image/project3-3.png">
-					</div>
-				</div>
-			</div>
+
 			<div>
 				<div class="project-section">	
 						<div class="project-title">
@@ -134,7 +124,7 @@
 						</div>
 						<div class="project-content">
 							<div class="text-intro">
-								<p>為了讓使用者能一目了然儀表板的內容，各別資料採用適合其呈現的圖表方式。</p>
+								<p>先針對導覽列進行分類，解決資訊架構上的問題</p>
 							</div>			
 						</div>
 						<div class="project-data">
@@ -142,18 +132,9 @@
 							</div>
 						</div>	
 						<div class="project-img">
-								<img src="Assets/image/project3-4.jpg">
+							<img src="Assets/image/project3-3.jpg">
 						</div>
-						<div class="project-content">
-							<div class="text-intro">
-								<p>表單申請流程強調區塊的差異，以及添加順序提示，並加入了視覺動態引導。</p>
-							</div>			
-						</div>
-						<div class="project-img">
-							<video id="video1" controls width="800px">
-								<source src="Assets/video/manage1.mp4" type="video/mp4">
-							</video>
-						</div>
+
 				</div>
 			</div>
 		</div>

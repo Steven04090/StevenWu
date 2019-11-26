@@ -9,6 +9,10 @@
 	<link href="Assets/Content/font-awesome.css" rel="stylesheet">
 	<link href="Assets/Content/zoom.css" rel="stylesheet">
 	<style>
+	.header{position:absolute;top:0;right:0;bottom:unset;z-index: 1;padding: 0px 30px 0px 0px;}
+	.nav-item{border:none;margin-bottom: 0px;}
+	.nav-item > a{background-color: transparent;}
+	.normal-view-content{border-width: 10px !important;}
 	.normal-view-content,.border-25,.border-top-bottom-25,.project-head{
 		border-color:#59b995 !important;
 	}
@@ -16,25 +20,26 @@
 </head>
   <body data-spy="scroll" data-target="#toc">
 	<div class="normal-view-content"></div>
-	<div class="header">
-		<img src="Assets/image/wulogo.png">
-		<ul class="nav-ul hidden-xs">
-            <li class="nav-item">
-				<a href="index.html"><i class="fa fa-arrow-left"></i></a>
-			</li>
-		 </ul>
-		 <div class="hidden-lg hidden-md hidden-sm menu"><a href="index.html"><i style="font-size:20px;" class="fa fa-arrow-left"></i></a></div>
-	</div>
 	<div class="content-page">
 		<!-- 內容 -->
 		<section class="project-panel row">
 				<div class="col-lg-9 col-md-12 no-padding">
-						<div class="content-top-image project-2-img">
-							</div>
+					<div class="header">
+							<ul class="nav-ul">
+							<li class="nav-item">
+								<a href="#0"><img style="width:40px;" src="Assets/image/wulogo.png"></a>
+							</li>
+							<li class="nav-item" style="float: right;">
+									<a href="index.html"><i class="fa fa-arrow-left" style="position: relative;top: 4px;color:#fff;"></i></a>
+							</li>
+							</ul>
+						</div>
+					<div class="content-top-image project-2-img">
+					</div>
 					</div>	
 				<div class="col-lg-3 hidden-sm hidden-xs no-padding border-25">
 						<div class="project-head sticky">
-								<h1 data-toc-skip>能源資料申報整合平臺</h1>
+								<h1 data-toc-skip style="color: #599154;">能源資料申報整合平臺</h1>
 								<h2 data-toc-skip>讓民間團體申報各種類的能源資料</h2>
 							</div>	
 						<div class="project-data border-top-bottom-25" style="position:relative;padding-top:40px;padding-bottom: 20px;">
@@ -80,7 +85,7 @@
 													</p>
 												</div>
 												<div class="m-center t-center">
-													<img src="Assets/image/project2-3.jpg">
+													<img src="Assets/image/project2-3.jpg" data-action="zoom">
 												</div>
 											</div>
 										</div>
@@ -136,7 +141,7 @@
 												
 											</div>
 											<div class="project-img">
-												<img src="Assets/image/project2-4.jpg">
+												<img src="Assets/image/project2-4.jpg" data-action="zoom">
 												<div style="max-width: 550px;margin:0 auto;">
 													<p class="source-p">
 														來源:
@@ -168,7 +173,7 @@
 												</div>
 											</div>
 											<div class="project-img">
-												<img src="Assets/image/project2-1.jpg">
+												<img src="Assets/image/project2-1.jpg" data-action="zoom">
 											</div>
 						
 											<div class="project-content">
