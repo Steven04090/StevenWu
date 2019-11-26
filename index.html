@@ -9,8 +9,43 @@
    <link href="Assets/Content/keyboard.css" rel="stylesheet">
    <link href="Assets/Content/font-awesome.css" rel="stylesheet">
    <link href="Assets/Content/index.css" rel="stylesheet">
+   <style>
+   .progress {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    position: fixed;
+    left:0;
+    right:0;
+    top:0px;
+    bottom:0px;
+    width: 100%;
+    z-index: 999999999;
+}.progress-bar { 
+    border-top: 1px solid rgb(160, 160, 160);
+    position: absolute;
+    top:50%;
+    width: 0%;
+}
+.progress-text {
+    font-family: "Menlo", "Consolas", monospace;
+    font-size: 12px;
+    margin-top: 10px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+.progress-complete .progress-bar {
+    border-top-color: rgb(255, 255, 255);
+}
+   </style>
 </head>
 <body>
+   <div class="progress" id="progress">
+      <span class="progress-bar"></span>
+      <span class="progress-text">0%</span>
+   </div>
    <div style="position:fixed;width:100%;;z-index: 10;background-color: transparent;">
       <div class="header">
             <ul class="nav-ul">
@@ -103,7 +138,9 @@
 </div>
 </body>
    <script src="Assets/javascript/jquery.min.js"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="Assets/javascript/imagesloaded.pkgd.min.js"></script>
+   <script src="Assets/javascript/main.js"></script>
+   <script src="Assets/javascript/jquery.easing.min.js"></script>
    <script src="Assets/javascript/theater.min.js"></script>
    <script src="Assets/javascript/fullpage.min.js"></script>
    <script type="text/javascript">
