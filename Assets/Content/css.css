@@ -87,58 +87,7 @@ body{
 .normal-view-content{
 	pointer-events: none;
 }
-.bg-cloud{
-	height:100%;
-	width:100%;
-	position: fixed;
-	left:0px;
-	bottom:0px;
-	z-index: 999;
-	pointer-events: none;
-}
-.fp-viewing-0 .bg-cloud::before,.fp-viewing-1 .bg-cloud::before{
-	bottom: 0px;
-}
-.bg-cloud .section1-inner{
-	transform-origin:inherit;
-}
-.bg-cloud .section1-inner::before{
-	position: absolute;
-	content:"";
-	width: 100vw;
-	height: 1200vh;
-	background-image: url(../image/road.png);
-	background-repeat:repeat;
-	background-position: 0%;
-	opacity:0;
-	transition:opacity 1s 1s ease-in-out,top 1s 0s ease-in-out;
-	animation: show-hide 4500ms 1s infinite;
-}
-@keyframes show-hide {
-	0%, 100% {
-	 opacity:0
-	}
-	20%, 80% {
-	 opacity:1
-	}
-   }
-.bg-cloud .section1-inner::before{
-	left: -20px;
-	top: -350px;
-}
-.fp-viewing-1 .bg-cloud .section1-inner::before{
-	top:-550px;
-}
-[class*="fp-viewing-2"] .bg-cloud .section1-inner::before{
-	top:-750px;
-}
-@media(max-width:767px) {
-	.bg-cloud .section1-inner::before{
-		left: -140px;
-		width: 170vw;
-		background-size: 70%;
-	}
-}
+
 .Passover-background{
 	height: 100vh;
 	position: fixed;

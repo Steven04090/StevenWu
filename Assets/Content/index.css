@@ -4,7 +4,7 @@ body{
   background-image:url(../image/back.png);
   border-width: 20px;
   border-style: solid;
-   border-color:#000;
+  border-color:#000;
   }
 body.fp-viewing-0 {
   background-color:#0e1f7f;
@@ -51,16 +51,19 @@ body[class*="fp-viewing-2"] {
 body[class*="fp-viewing-2"]{
   border-color: #1c8e80;
 }
+.loading #welcome{
+  animation: unset;
+}
 #welcome{
   transition: .5s all;
   padding-top:0vh;
   opacity: 0;
-  animation: movein 2500ms .2s forwards;
+  animation: movein 2500ms .5s forwards;
 }
 @keyframes movein {
 	0% {
     opacity: 0;
-	padding-top:150vh;
+	  padding-top:150vh;
 	}
 	100% {
     opacity: 1;
@@ -399,4 +402,57 @@ body[class*="fp-viewing-2"]{
   display: block;
   width: 100%;
   height: auto;
+}
+
+.bg-cloud{
+	height:100%;
+	width:100%;
+	position: fixed;
+	left:0px;
+	bottom:0px;
+	z-index: 999;
+	pointer-events: none;
+}
+.fp-viewing-0 .bg-cloud::before,.fp-viewing-1 .bg-cloud::before{
+	bottom: 0px;
+}
+.bg-cloud .section1-inner{
+	transform-origin:inherit;
+}
+.bg-cloud .section1-inner::before{
+	position: absolute;
+	content:"";
+	width: 100vw;
+	height: 1200vh;
+	background-image: url(../image/road.png);
+	background-repeat:repeat;
+	background-position: 0%;
+	opacity:0;
+	transition:opacity 1s 1s ease-in-out,top 1s 0s ease-in-out;
+	animation: show-hide 4500ms 1s infinite;
+}
+@keyframes show-hide {
+	0%, 100% {
+	 opacity:0
+	}
+	20%, 80% {
+	 opacity:1
+	}
+   }
+.bg-cloud .section1-inner::before{
+	left: -20px;
+	top: -350px;
+}
+.fp-viewing-1 .bg-cloud .section1-inner::before{
+	top:-550px;
+}
+[class*="fp-viewing-2"] .bg-cloud .section1-inner::before{
+	top:-750px;
+}
+@media(max-width:767px) {
+	.bg-cloud .section1-inner::before{
+		left: -140px;
+		width: 170vw;
+		background-size: 70%;
+	}
 }
