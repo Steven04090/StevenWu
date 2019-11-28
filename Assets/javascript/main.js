@@ -47,7 +47,7 @@ $(function () {
 
             // 顯示bar的寬度與text反應current的值
             // 去除字串小數點的部分取整數
-            $progressBar.css({ width: current + '%' });
+            
             $progressText.text(Math.floor(current) + '%');
 
             // 結束處理
@@ -63,12 +63,13 @@ $(function () {
                 $progressBar.add($progressText)
                     // 等待0.5秒
                     .delay(500)
-
+                    
                     //執行0.25秒的動畫，將進度顯示bar和字串變成透明
                     .animate({ opacity: 0 }, 250, function () {
 
                         //執行1秒的動畫，將overlap往上方slide out
-                        $container.animate({ top: '-100%' }, 1000, 'easeInOutQuint');
+                        $container.animate({ opacity: '0%' }, 1000, 'easeInOutQuint')
+                        $container.fadeOut();
                     });
             }
 
