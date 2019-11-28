@@ -410,7 +410,7 @@ body[class*="fp-viewing-2"]{
 	position: fixed;
 	left:0px;
 	bottom:0px;
-	z-index: 999;
+	z-index: 99;
 	pointer-events: none;
 }
 .fp-viewing-0 .bg-cloud::before,.fp-viewing-1 .bg-cloud::before{
@@ -456,3 +456,77 @@ body[class*="fp-viewing-2"]{
 		background-size: 70%;
 	}
 }
+/**** progress ****/
+.progress {
+  background-color: #f1f1f1;
+  color: #036eb8;
+  height: 100%;
+  position: fixed;
+  left:0;
+  right:0;
+  top:0px;
+  bottom:0px;
+  width: 100%;
+  z-index: 999;
+}
+.progress-text {
+  font-family: "Menlo", "Consolas", monospace;
+  font-size: 66px;
+  margin-top: 10px;
+  position: absolute;
+  text-align: center;
+  top: calc(50% - 10px);
+  width: 100%;
+}
+.perspect3d{
+  position: absolute;
+  top:calc(50% - 90px);
+  left:calc(50% - 30px);
+  height: 60px;
+  width: 60px;
+  transform: rotateX(45deg) rotateZ(45deg) rotateY(0deg);
+  transform-style: preserve-3d;
+  animation: cube 5500ms infinite;
+}
+.cube1 {
+  background-color: #e2e2e2;
+  transform: translateZ(30px);
+}
+.cube2 {
+  background-color: #63b4f5;
+  transform: rotateX(-90deg) translateZ(30px);
+}
+.cube3 {
+  background-color: #113cb7;
+  transform: rotateY(90deg) translateZ(30px);
+}
+.cube4 {
+  background-color: #63b4f5;
+  transform: rotateX(-90deg) translateZ(-30px);
+}
+.cube5 {
+  background-color: #e2e2e2;
+  transform: translateZ(-30px);
+}
+.cube6 {
+  background-color: #113cb7;
+  transform: rotateY(90deg) translateZ(-30px);
+}
+.cube1, .cube2, .cube3,.cube4, .cube5, .cube6 {
+  height: 60px;
+  position: absolute;
+  width: 60px;
+}   
+@keyframes cube {
+	0% {
+    transform:rotateX(45deg) rotateZ(45deg) rotateY(0deg);
+	}
+  50%{
+    transform:rotateX(45deg) rotateZ(225deg) rotateY(360deg);
+  }
+  100% {
+    transform:rotateX(45deg) rotateZ(45deg) rotateY(0deg);
+	}
+   }
+
+
