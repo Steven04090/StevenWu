@@ -196,6 +196,9 @@ body[class*="fp-viewing-2"]{
 .normal-view-porject4{
   left:360vw;top:20vh;
 }
+.normal-view-porject5 {
+  left: 460vw;top: 25vh;
+}
 .view-porject-title{
   font-size:26px;
   font-weight: bold;
@@ -230,7 +233,7 @@ body[class*="fp-viewing-2"]{
     width:41px;
   }
   .view-porject{
-    width: 250px;
+    width: 250px !important;
     top: 25px;
   }
   .normal-view-porject1{
