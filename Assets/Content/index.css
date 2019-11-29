@@ -540,6 +540,7 @@ body[class*="fp-viewing-2"]{
   z-index:99;
   left:calc(50% - 6px);
   bottom:60px;
+  pointer-events:none;
 }
 .fp-viewing-0 .scroll-hint i {
   color:#fff;
