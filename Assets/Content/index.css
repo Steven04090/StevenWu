@@ -306,7 +306,7 @@ body[class*="fp-viewing-2"]{
 }
 .fp-slidesNav{
   position:fixed;
-  bottom:7px;
+  bottom:8px;
   left:390px;
   text-align: left;
 }
@@ -528,15 +528,17 @@ body[class*="fp-viewing-2"]{
     transform:rotateX(45deg) rotateZ(45deg) rotateY(0deg);
 	}
    }
-
-
 .scroll-hint{
+  display:none;
+}
+.fp-viewing-0 .scroll-hint{
+  display:block;
   position:absolute;
   z-index:99;
   left:calc(50% - 6px);
   bottom:60px;
 }
-.scroll-hint i {
+.fp-viewing-0 .scroll-hint i {
   color:#fff;
   position: relative;
   top:-4px;
@@ -551,17 +553,17 @@ body[class*="fp-viewing-2"]{
    top:10px;
 	}
 }
-.gesture{
+.fp-viewing-0 .gesture{
   display:none;
 }
 @media(max-width:767px) {
-    .scroll-hint i{
+  .fp-viewing-0 .scroll-hint i{
       animation: unset;
     }
-    .scroll-hint p,.mouse,.scroll-hint i{
+    .fp-viewing-0 .scroll-hint p,.mouse,.scroll-hint i{
       display:none !important;
     }
-    .gesture{
+    .fp-viewing-0 .gesture{
       display:block;
       position: relative;
       width:50px;
@@ -579,7 +581,7 @@ body[class*="fp-viewing-2"]{
       top:-10px;
       }
     }
-    .scroll-hint{
+    .fp-viewing-0 .scroll-hint{
       bottom:120px;
     }
   }
