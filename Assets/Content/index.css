@@ -54,20 +54,19 @@ body[class*="fp-viewing-2"]{
 .loading #welcome{
   animation: unset;
 }
-#welcome{
+.fp-viewing-0  #welcome{
   transition: .5s all;
-  padding-top:0vh;
   opacity: 0;
   animation: movein 2500ms .5s forwards;
 }
 @keyframes movein {
 	0% {
     opacity: 0;
-	  padding-top:150vh;
+	padding-top:100vh;
 	}
 	100% {
     opacity: 1;
-    padding-top:0vh;
+	padding-top:0vh;
 	}
    }
 .normal-view-box{
@@ -444,7 +443,7 @@ body[class*="fp-viewing-2"]{
    }
 .bg-cloud .section1-inner::before{
 	left: -20px;
-	top: -350px;
+	top: -400px;
 }
 .fp-viewing-1 .bg-cloud .section1-inner::before{
 	top:-550px;
