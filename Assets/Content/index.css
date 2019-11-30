@@ -52,7 +52,7 @@ body[class*="fp-viewing-2"]{
   border-color: #1c8e80;
 }
 .loading #welcome{
-  animation: unset;
+  animation: unset !important;
 }
 .fp-viewing-0  #welcome{
   transition: .5s all;
