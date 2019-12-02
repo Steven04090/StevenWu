@@ -262,11 +262,12 @@ body[class*="fp-viewing-2"]{
   position: absolute;
   content: "";
   z-index: 2;
-  top: 6px;
-  right: 57px;
-  border-width: 14.5px 20px 14.5px 0;
-  border-style: solid;
-  border-color: transparent #1c8e80 transparent transparent;
+  top: 0px;
+  right: 53px;
+  font-family: FontAwesome;
+  content: "\f137";
+  font-size: 30px;
+  color:#1c8e80;
 }
 .fp-controlArrow {
   -webkit-user-select: none;
@@ -286,11 +287,12 @@ body[class*="fp-viewing-2"]{
   position: absolute;
   content: "";
   z-index: 2;
-  top: 6px;
+  top: 0px;
   right: 12px;
-  border-width: 14.5px 0 14.5px 20px;
-  border-color: transparent transparent transparent #1c8e80;
-  border-style: solid;
+  font-family: FontAwesome;
+  content: "\f138";
+  font-size: 30px;
+  color:#1c8e80;
 }
 .fp-slide.fp-table {
   display: table;
