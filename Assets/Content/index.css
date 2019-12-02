@@ -485,7 +485,7 @@ body[class*="fp-viewing-2"]{
 @media(max-width:767px) {
 	.bg-cloud .section1-inner::before{
 		left: -140px;
-		width: 185vw;
+		width: 200vw;
 		background-size: 70%;
 	}
 }
