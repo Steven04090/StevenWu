@@ -35,8 +35,21 @@ body[class*="fp-viewing-2"] {
 .wulogo{
   padding: 0px !important;
 }
-.wulogo img{
+.wulogo svg{
   width:44px;
+  height:43px;
+}
+.wulogo svg polygon{
+  fill:#444;
+}
+.fp-viewing-0 .wulogo svg polygon{
+  fill:#062d5e;
+}
+.fp-viewing-1 .wulogo svg polygon{
+  fill:#420f4d;
+}
+[class*="fp-viewing-2"] .wulogo svg polygon{
+  fill:#1c8e80;
 }
 .normal-view-content{
   position:fixed;
@@ -228,8 +241,9 @@ body[class*="fp-viewing-2"]{
   background-color:#572362;
 }
 @media(max-width:767px) {
-  .wulogo img{
+  .wulogo svg{
     width:41px;
+    height:39px;
   }
   .view-porject{
     width: 250px !important;
