@@ -444,7 +444,8 @@ body[class*="fp-viewing-2"]{
 	left:0px;
 	bottom:0px;
 	z-index: 99;
-	pointer-events: none;
+  pointer-events: none;
+  overflow: hidden;
 }
 .fp-viewing-0 .bg-cloud::before,.fp-viewing-1 .bg-cloud::before{
 	bottom: 0px;
