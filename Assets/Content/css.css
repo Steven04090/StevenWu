@@ -650,9 +650,11 @@ ul {
 }
 .project-title h3::before{
 	position: absolute;
-	content:attr(data-content) "︰";
+	content:attr(data-content);
 	font-size: 80px;
-	top:-10px;
+	top:30px;
+	transform: rotateZ(90deg);
+	transform-origin: left;
 	text-align: left;
 	font-weight: bold;
 	color:#f3f3f3;
