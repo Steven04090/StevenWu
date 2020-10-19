@@ -1,0 +1,5 @@
+User-agent: Googlebot
+Disallow: /project1.html
+Disallow: /project2.html
+Disallow: /project3.html
+Disallow: /project4.html
