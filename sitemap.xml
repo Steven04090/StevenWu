@@ -8,7 +8,7 @@
  created with Free Online Sitemap Generator www.xml-sitemaps.com 
 -->
 <url>
-<loc>https://steven04090.github.io/StevenWu/</loc>
+<loc>https://steven04090.github.io/StevenWu/index.html</loc>
 <lastmod>2023-03-01T01:09:52+00:00</lastmod>
 <priority>1.00</priority>
 </url>
@@ -48,9 +48,4 @@ https://steven04090.github.io/StevenWu/project4.html
 <priority>0.80</priority>
 </url>
 
-<url>
-<loc>https://steven04090.github.io/StevenWu/index.html</loc>
-<lastmod>2023-03-01T01:09:52+00:00</lastmod>
-<priority>0.64</priority>
-</url>
 </urlset>
