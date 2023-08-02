@@ -154,7 +154,7 @@ body[class*="fp-viewing-2"]{
   }
   .nav-item > a{
     padding:10px 15px;
-    float:none;
+    width:100%;
     text-align: center;
     border-width: 3px;
     border-style: solid;
