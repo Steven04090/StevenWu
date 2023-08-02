@@ -469,15 +469,15 @@ body[class*="fp-viewing-2"] .header{
 	background-position: 0%;
 	opacity:0;
 	transition:opacity 1s 1s ease-in-out,top 1s 0s ease-in-out;
-	animation: show-hide 4500ms 1s infinite;
+	animation: show-hide 10000ms 1s infinite;
 }
 @keyframes show-hide {
-	0%, 100% {
-	 opacity:0
-	}
-	20%, 80% {
-	 opacity:1
-	}
+	0% {opacity:0;left:-70px;}
+	20%,40% {opacity:1;left:-70px;}
+	50%{opacity:0;left:-70px;}
+	50.2%{left:70px;}
+	60%,80%{opacity:1;left:70px;}
+	100%{opacity:0;left:70px;}
    }
 .bg-cloud .section1-inner::before{
 	left: -20px;
