@@ -107,7 +107,7 @@ body{
 	position: fixed;
 	width:100%;
 	z-index:3;
-	bottom:0;
+	bottom:10px;
 	left:0;
 	transition:.4s ease-in-out;
 	padding: 0px 20px;
