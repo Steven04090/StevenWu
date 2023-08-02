@@ -198,6 +198,7 @@ ul {
 }
 .nav-item{
 	display:flex;	
+	margin-right: -10px;
 	border:10px solid #000;
 	transition:1s all;
 }
