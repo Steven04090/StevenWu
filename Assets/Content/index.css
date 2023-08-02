@@ -115,6 +115,9 @@ body[class*="fp-viewing-2"]{
 [class*="fp-viewing-2"] .normal-view-box{
   color: #1c8e80;
 }
+body[class*="fp-viewing-2"] .header{
+  width:auto !important;	
+}
 .fp-viewing-2-0 .normal-view-title::before{
   position: absolute;
   content:"SMART HOME APP";
@@ -334,7 +337,7 @@ body[class*="fp-viewing-2"]{
 .fp-slidesNav{
   position:fixed;
   bottom:8px;
-  left:390px;
+  left:449px;
   text-align: left;
 }
 .fp-slidesNav ul li{
