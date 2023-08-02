@@ -212,7 +212,6 @@ ul {
 	position:relative;
 	background-color: #fff;
 	transition: .25s all;
-	float:left;
 }
 .nav-item > a:hover{
 	color: rgb(84, 164, 230);
