@@ -146,7 +146,7 @@ body[class*="fp-viewing-2"] .header{
 }
 @media(max-width:767px) {
   .header .nav-ul{
-    bottom: 55px;
+    bottom: 45px;
     position: absolute;
     width: 100vw;
   }
